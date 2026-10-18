@@ -1,0 +1,1 @@
+The application saves the scraped dataset here as books.csv. Run app.py and use the Scraper tab.

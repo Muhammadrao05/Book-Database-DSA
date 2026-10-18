@@ -1,0 +1,29 @@
+BOOK DATABASE — DSA PROJECT 1
+QUICK START FOR WINDOWS + VS CODE
+
+1. Download Book_DSA_Project_Ready.zip.
+2. Right-click the ZIP > Extract All...
+3. Extract it to a simple location, for example Desktop.
+4. Open VS Code.
+5. Choose File > Open Folder...
+6. Select the extracted Book_DSA_Project folder (the folder that directly contains app.py and requirements.txt).
+7. Choose Terminal > New Terminal.
+8. In the terminal, run these commands one by one:
+
+   py -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+   .\.venv\Scripts\python.exe app.py
+
+These commands do not require activating the virtual environment, so PowerShell's script execution policy should not block you.
+
+If the 'py' command is not found, try 'python' instead:
+   python -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+   .\.venv\Scripts\python.exe app.py
+
+IMPORTANT:
+- Make sure the terminal path is the project folder containing app.py and requirements.txt.
+- The default scraper URL is https://openlibrary.org/search.json?q=python
+- Keep the target count at 15000, then click Start Scraping.
+- The project needs internet access. Public API availability/rate limits may affect the final record count.
+- Check data/books.csv to verify how many records were actually collected.
